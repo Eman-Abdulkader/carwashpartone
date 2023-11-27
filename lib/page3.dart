@@ -102,11 +102,11 @@ class Page3 extends StatelessWidget {
               ),
               const SizedBox(height: 8),
              const Text(
-                'For more info contact us: +961 xxx xxx', // Replace XXX with the actual place number
+                'For more info contact us: +961 xxx xxx',
                 style: TextStyle(fontSize: 16),
               ),
              const Text(
-                'Email: carwash@example.com', // Replace with the actual email
+                'Email: carwash@example.com',
                 style: TextStyle(fontSize: 16),
               ),
             ],

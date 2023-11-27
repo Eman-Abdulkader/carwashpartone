@@ -6,7 +6,7 @@ class Car {
   final String type;
   final double basePrice;
   bool selected = false;
-  String washType; // Separate wash type for each car type
+  String washType;
 
   Car(this.type, this.basePrice, this.washType);
 }
@@ -32,8 +32,8 @@ class _Page2State extends State<Page2> {
   String _text = '';
   DateTime? _selectedDate;
   TimeOfDay? _selectedTime;
-  Car _selectedCarType = carTypes[0]; // Default car type
-  int _customerNumber = 1; // Initial customer number
+  Car _selectedCarType = carTypes[0];
+  int _customerNumber = 1;
 
   // Controllers for text fields
   TextEditingController nameController = TextEditingController();
@@ -58,7 +58,7 @@ class _Page2State extends State<Page2> {
     if (picked != null && picked != _selectedDate) {
       setState(() {
         _selectedDate = picked;
-        dateController.text = picked.toString(); // Set date controller text
+        dateController.text = picked.toString();
       });
     }
   }
@@ -93,7 +93,7 @@ class _Page2State extends State<Page2> {
 
     setState(() {
       _customerNumber++;
-      clearFields(); // Call clearFields after navigating to Page3
+      clearFields();
     });
   }
 
@@ -218,7 +218,7 @@ class _Page2State extends State<Page2> {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    // Move the loop outside the Column
+
                     for (var carType in carTypes)
                       RadioListTile<Car>(
                         title: Text(carType.type),
@@ -230,7 +230,7 @@ class _Page2State extends State<Page2> {
                           });
                         },
                       ),
-                    // Add the wash type DropdownButton outside the loop
+
                     const SizedBox(height: 10),
                     const SizedBox(height: 10),
                     const Text(
