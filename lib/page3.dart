@@ -89,8 +89,29 @@ class Page3 extends StatelessWidget {
                 ),
 
               ],
+              const SizedBox(height: 150),
+              const Text(
+                'Thank you for your visit!',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 90),
+              const Divider(
+                height: 20,
+                thickness: 2,
+                color: Colors.black,
+              ),
+              const SizedBox(height: 8),
+             const Text(
+                'For more info contact us: +961 xxx xxx', // Replace XXX with the actual place number
+                style: TextStyle(fontSize: 16),
+              ),
+             const Text(
+                'Email: carwash@example.com', // Replace with the actual email
+                style: TextStyle(fontSize: 16),
+              ),
             ],
           ),
+
         ),
       ),
     );

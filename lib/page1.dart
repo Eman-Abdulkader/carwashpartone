@@ -126,6 +126,21 @@ class _HomePageState extends State<HomePage> {
                   },
                 ),
               ),
+              const SizedBox(height: 90),
+             const Divider(
+                height: 20, // You can adjust the height of the line
+                thickness: 2, // You can adjust the thickness of the line
+                color: Colors.black, // You can set the color of the line
+              ),
+              const SizedBox(height: 5),
+              const Text(
+                'For more info contact us: +961 xxx xxx', // Replace XXX with the actual place number
+                style: TextStyle(fontSize: 16),
+              ),
+              const Text(
+                'Email: carwash@example.com', // Replace with the actual email
+                style: TextStyle(fontSize: 16),
+              ),
             ],
           ),
         ),
