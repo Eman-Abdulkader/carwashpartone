@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
 
-              // Reviews
+              // Reviews section
               const SizedBox(height: 100),
               Text(
                 'Customer Reviews: $_text',
