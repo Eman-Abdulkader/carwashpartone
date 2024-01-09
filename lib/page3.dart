@@ -67,6 +67,8 @@ class Page3 extends StatelessWidget {
                 Text(
                   'Customer Number: $customerNumber',
                   style: const TextStyle(fontSize: 20),
+
+
                 ),
                 Text(
                   'Selected Date and Time:\n ${selectedDate!
@@ -94,18 +96,18 @@ class Page3 extends StatelessWidget {
                 'Thank you for your visit!',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 90),
+              const SizedBox(height: 70),
               const Divider(
                 height: 20,
                 thickness: 2,
                 color: Colors.black,
               ),
               const SizedBox(height: 8),
-             const Text(
+              const Text(
                 'For more info contact us: +961 xxx xxx',
                 style: TextStyle(fontSize: 16),
               ),
-             const Text(
+              const Text(
                 'Email: carwash@example.com',
                 style: TextStyle(fontSize: 16),
               ),
